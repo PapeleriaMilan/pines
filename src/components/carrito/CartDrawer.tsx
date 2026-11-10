@@ -1,10 +1,16 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { Link } from "react-router";
 import { Dialog as DialogPrimitive } from "radix-ui";
 import { AnimatePresence, motion } from "motion/react";
-import { Download, ImageIcon, Share2, ShoppingBag, Trash2, X } from "lucide-react";
+import { ClipboardList, Loader2, ShoppingBag, Trash2, X } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { Cantidad } from "@/components/shared/Cantidad";
 import { WhatsAppIcon } from "@/components/shared/WhatsAppIcon";
 import { useCart } from "@/hooks/useCart";
@@ -16,11 +22,50 @@ import {
   type LineaPedido,
 } from "@/lib/generarImagenPedido";
 
-const NOMBRE_ARCHIVO = "pedido-papeleria-milan.jpg";
+const NOMBRE_ARCHIVO = "pedido-papeleria-milan";
+
+/**
+ * wa.me solo acepta texto, no adjuntos. Por eso:
+ * - Celular: menú nativo de compartir con la imagen y el texto del pedido.
+ * - Computadora: se descarga la imagen y un diálogo invita a enviarla por el
+ *   chat del negocio.
+ */
+const tactil = window.matchMedia("(pointer: coarse)");
+
+const usarMenuCompartir = () =>
+  tactil.matches &&
+  !!navigator.canShare?.({
+    files: [new File([""], "x.jpg", { type: "image/jpeg" })],
+  });
+
+/** Se reevalúa en vivo (p. ej. al activar el modo responsivo del navegador). */
+const suscribirTactil = (cb: () => void) => {
+  tactil.addEventListener("change", cb);
+  window.addEventListener("resize", cb);
+  return () => {
+    tactil.removeEventListener("change", cb);
+    window.removeEventListener("resize", cb);
+  };
+};
+
+function descargar(blob: Blob, nombre: string) {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = nombre;
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
 
 export const CartDrawer = () => {
-  const { items, total, abierto, setAbierto, sumar, quitar, vaciar } = useCart();
-  const [imagen, setImagen] = useState<{ blob: Blob; url: string } | null>(null);
+  const { items, total, abierto, setAbierto, sumar, quitar, vaciar } =
+    useCart();
+  const [confirmarVaciar, setConfirmarVaciar] = useState(false);
+  const esCelular = useSyncExternalStore(suscribirTactil, usarMenuCompartir);
+  const [dialogoEnvio, setDialogoEnvio] = useState(false);
+  const [imagen, setImagen] = useState<{ blob: Blob; url: string } | null>(
+    null,
+  );
 
   const lineas = useMemo<LineaPedido[]>(
     () =>
@@ -55,138 +100,246 @@ export const CartDrawer = () => {
 
   const imagenActual = lineas.length > 0 ? imagen : null;
 
-  const compartirImagen = async () => {
+  const chatNegocio = enlaceWhatsApp(textoPedido());
+
+  // Celular: menú nativo (el cliente elige WhatsApp y el chat del negocio).
+  const compartirPedido = async () => {
     if (!imagenActual) return;
-    const archivo = new File([imagenActual.blob], NOMBRE_ARCHIVO, { type: "image/jpeg" });
-    if (navigator.canShare?.({ files: [archivo] })) {
-      try {
-        await navigator.share({ files: [archivo], text: textoPedido(lineas) });
-      } catch {
-        /* el usuario canceló */
-      }
-      return;
+    const archivo = new File([imagenActual.blob], `${NOMBRE_ARCHIVO}.jpg`, {
+      type: imagenActual.blob.type,
+    });
+    try {
+      await navigator.share({ files: [archivo], text: textoPedido() });
+    } catch (e) {
+      if ((e as Error).name !== "AbortError")
+        window.open(chatNegocio, "_blank", "noopener");
     }
-    const a = document.createElement("a");
-    a.href = imagenActual.url;
-    a.download = NOMBRE_ARCHIVO;
-    a.click();
-    toast.success("Imagen descargada");
   };
 
-  const puedeCompartir =
-    typeof navigator !== "undefined" &&
-    !!navigator.canShare?.({ files: [new File([""], "x.jpg", { type: "image/jpeg" })] });
+  // Computadora: descarga la imagen y muestra cómo enviarla.
+  const descargarPedido = () => {
+    if (!imagenActual) return;
+    descargar(imagenActual.blob, `${NOMBRE_ARCHIVO}.jpg`);
+    setAbierto(false);
+    setDialogoEnvio(true);
+  };
 
   return (
-    <DialogPrimitive.Root open={abierto} onOpenChange={setAbierto}>
-      <DialogPrimitive.Portal>
-        <DialogPrimitive.Overlay className="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-indigo-950/40 backdrop-blur-[2px]" />
-        <DialogPrimitive.Content
-          aria-describedby={undefined}
-          className="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=open]:slide-in-from-bottom md:data-[state=open]:slide-in-from-right data-[state=closed]:slide-out-to-bottom md:data-[state=closed]:slide-out-to-right bg-background fixed inset-x-0 bottom-0 z-50 flex max-h-[90dvh] flex-col rounded-t-3xl shadow-2xl duration-250 ease-out outline-none md:inset-y-0 md:right-0 md:left-auto md:max-h-none md:w-[420px] md:rounded-l-3xl md:rounded-tr-none"
-        >
-          <div className="bg-border mx-auto mt-2.5 h-1.5 w-10 rounded-full md:hidden" />
-
-          <div className="flex items-center justify-between px-5 pt-3 pb-2 md:pt-5">
-            <DialogPrimitive.Title className="text-secondary flex items-center gap-2 text-lg font-semibold">
-              Carrito
-              {total > 0 && (
-                <span className="bg-accent text-accent-foreground rounded-full px-2 py-0.5 text-xs">
-                  {total}
-                </span>
-              )}
-            </DialogPrimitive.Title>
-            <div className="flex items-center gap-1">
-              {total > 0 && (
-                <Button variant="destructive" size="sm" onClick={vaciar}>
-                  Vaciar
-                </Button>
-              )}
-              <DialogPrimitive.Close asChild>
-                <Button variant="ghost" size="icon" aria-label="Cerrar">
-                  <X className="size-5" />
-                </Button>
-              </DialogPrimitive.Close>
-            </div>
-          </div>
-
-          {lineas.length === 0 ? (
-            <div className="grid place-items-center gap-4 px-5 py-14 text-center">
-              <div className="bg-accent text-primary grid size-16 place-items-center rounded-full">
-                <ShoppingBag className="size-7" />
-              </div>
-              <p className="text-muted-foreground text-sm">Tu carrito está vacío</p>
-              <DialogPrimitive.Close asChild>
-                <Button asChild>
-                  <Link to="/">Ver diseños</Link>
-                </Button>
-              </DialogPrimitive.Close>
-            </div>
-          ) : (
-            <>
-              <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-5">
-                <ul className="grid gap-2">
-                  <AnimatePresence initial={false}>
-                    {lineas.map(({ diseno, cantidad }) => (
-                      <motion.li
-                        key={diseno.slug}
-                        layout
-                        initial={{ opacity: 0, x: 16 }}
+    <>
+      <DialogPrimitive.Root
+        open={abierto}
+        onOpenChange={(v) => {
+          setAbierto(v);
+          if (!v) setConfirmarVaciar(false);
+        }}
+      >
+        <DialogPrimitive.Portal>
+          <DialogPrimitive.Overlay className="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-sky-950/40 backdrop-blur-[2px] dark:bg-black/60" />
+          <DialogPrimitive.Content
+            aria-describedby={undefined}
+            className={[
+              // Animación: cae desde arriba (donde está el ícono del carrito).
+              "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=open]:slide-in-from-top data-[state=closed]:slide-out-to-top md:data-[state=open]:slide-in-from-top-6 md:data-[state=closed]:slide-out-to-top-6 md:data-[state=open]:fade-in-0 md:data-[state=closed]:fade-out-0 duration-250 ease-out",
+              // Móvil: hoja superior a todo el ancho.
+              "bg-background fixed inset-x-0 top-0 z-50 flex max-h-[90dvh] flex-col rounded-b-3xl pt-[env(safe-area-inset-top)] shadow-2xl outline-none",
+              // Desktop: panel en la esquina superior derecha.
+              "h-full md:top-3 md:right-3 md:left-auto md:max-h-[calc(100dvh-1.5rem)] md:w-[420px] md:rounded-3xl md:border md:pt-0",
+            ].join(" ")}
+          >
+            <div className="flex items-center justify-between px-5 pt-4 pb-2">
+              <DialogPrimitive.Title className="text-secondary flex items-center gap-2 text-lg font-semibold">
+                Carrito
+                {total > 0 && (
+                  <span className="bg-accent text-accent-foreground rounded-full px-2 py-0.5 text-xs">
+                    {total}
+                  </span>
+                )}
+              </DialogPrimitive.Title>
+              <div className="flex items-center gap-1">
+                <AnimatePresence mode="popLayout" initial={false}>
+                  {total > 0 &&
+                    (confirmarVaciar ? (
+                      <motion.div
+                        key="confirmar"
+                        initial={{ opacity: 0, x: 8 }}
                         animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: -16, transition: { duration: 0.12 } }}
-                        transition={{ duration: 0.18 }}
-                        className="flex items-center gap-3 rounded-2xl border bg-white p-2"
+                        exit={{ opacity: 0, x: 8 }}
+                        transition={{ duration: 0.15 }}
+                        className="flex items-center gap-1"
                       >
-                        <DialogPrimitive.Close asChild>
-                          <Link to={`/diseno/${diseno.slug}`} className="shrink-0">
-                            <img src={diseno.portada} alt="" className="size-14 rounded-xl object-cover" />
-                          </Link>
-                        </DialogPrimitive.Close>
-                        <div className="min-w-0 flex-1">
-                          <p className="truncate text-sm font-semibold">{diseno.nombre}</p>
-                          <p className="text-muted-foreground font-inter truncate text-xs">{diseno.subtitulo}</p>
-                        </div>
-                        <Cantidad valor={cantidad} onCambio={(d) => sumar(diseno.slug, d)} />
+                        <span className="text-muted-foreground mr-1 text-xs">
+                          ¿Vaciar?
+                        </span>
+                        <Button
+                          size="sm"
+                          className="bg-destructive hover:bg-destructive/90 text-white shadow-none"
+                          onClick={() => {
+                            vaciar();
+                            setConfirmarVaciar(false);
+                          }}
+                        >
+                          Sí
+                        </Button>
                         <Button
                           variant="ghost"
-                          size="icon-sm"
-                          aria-label={`Quitar ${diseno.nombre}`}
-                          className="text-muted-foreground hover:text-destructive"
-                          onClick={() => quitar(diseno.slug)}
+                          size="sm"
+                          onClick={() => setConfirmarVaciar(false)}
                         >
-                          <Trash2 />
+                          No
                         </Button>
-                      </motion.li>
+                      </motion.div>
+                    ) : (
+                      <motion.div
+                        key="vaciar"
+                        initial={{ opacity: 0, x: -8 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -8 }}
+                        transition={{ duration: 0.15 }}
+                      >
+                        <Button
+                          variant="destructive"
+                          size="sm"
+                          onClick={() => setConfirmarVaciar(true)}
+                        >
+                          Vaciar
+                        </Button>
+                      </motion.div>
                     ))}
-                  </AnimatePresence>
-                </ul>
+                </AnimatePresence>
+                <DialogPrimitive.Close asChild>
+                  <Button variant="ghost" size="icon" aria-label="Cerrar">
+                    <X className="size-5" />
+                  </Button>
+                </DialogPrimitive.Close>
+              </div>
+            </div>
 
-                <div className="bg-muted my-4 overflow-hidden rounded-2xl border">
-                  {imagenActual ? (
-                    <img src={imagenActual.url} alt="Vista previa del pedido" className="w-full" />
-                  ) : (
-                    <div className="text-muted-foreground grid aspect-[4/3] place-items-center">
-                      <ImageIcon className="size-6 animate-pulse" />
-                    </div>
-                  )}
+            {lineas.length === 0 ? (
+              <div className="grid place-items-center gap-4 px-5 py-14 text-center">
+                <div className="bg-accent text-primary grid size-16 place-items-center rounded-full">
+                  <ShoppingBag className="size-7" />
                 </div>
+                <p className="text-muted-foreground text-sm">
+                  Tu carrito está vacío
+                </p>
+                <DialogPrimitive.Close asChild>
+                  <Button asChild>
+                    <Link to="/">Ver diseños</Link>
+                  </Button>
+                </DialogPrimitive.Close>
               </div>
+            ) : (
+              <>
+                <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-5">
+                  <ul className="grid gap-2 pb-4">
+                    <AnimatePresence initial={false}>
+                      {lineas.map(({ diseno, cantidad }) => (
+                        <motion.li
+                          key={diseno.slug}
+                          layout
+                          initial={{ opacity: 0, x: 16 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          exit={{
+                            opacity: 0,
+                            x: -16,
+                            transition: { duration: 0.12 },
+                          }}
+                          transition={{ duration: 0.18 }}
+                          className="bg-card flex items-center gap-2 rounded-2xl border p-2"
+                        >
+                          {/* Imagen + nombre llevan a la página del diseño. */}
+                          <DialogPrimitive.Close asChild>
+                            <Link
+                              to={`/diseno/${diseno.slug}`}
+                              className="group hover:bg-accent/60 -m-1 flex min-w-0 flex-1 items-center gap-3 rounded-xl p-1 transition-colors"
+                            >
+                              <img
+                                src={diseno.portada}
+                                alt=""
+                                className="size-20 shrink-0 rounded-xl object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                              />
+                              <div className="min-w-0">
+                                <p className="group-hover:text-primary truncate text-sm font-semibold transition-colors">
+                                  {diseno.nombre}
+                                </p>
+                                <p className="text-muted-foreground font-inter truncate text-xs">
+                                  {diseno.subtitulo}
+                                </p>
+                              </div>
+                            </Link>
+                          </DialogPrimitive.Close>
+                          <Cantidad
+                            valor={cantidad}
+                            onCambio={(d) => sumar(diseno.slug, d)}
+                          />
+                          <Button
+                            variant="ghost"
+                            size="icon-sm"
+                            aria-label={`Quitar ${diseno.nombre}`}
+                            className="text-muted-foreground hover:text-destructive"
+                            onClick={() => quitar(diseno.slug)}
+                          >
+                            <Trash2 />
+                          </Button>
+                        </motion.li>
+                      ))}
+                    </AnimatePresence>
+                  </ul>
+                </div>
 
-              <div className="grid gap-2 border-t px-5 pt-3 pb-[max(1rem,env(safe-area-inset-bottom))]">
-                <Button variant="outline" size="lg" disabled={!imagenActual} onClick={compartirImagen}>
-                  {puedeCompartir ? <Share2 /> : <Download />}
-                  {puedeCompartir ? "Compartir imagen" : "Descargar imagen"}
-                </Button>
-                <Button asChild variant="whatsapp" size="lg">
-                  <a href={enlaceWhatsApp(textoPedido(lineas))} target="_blank" rel="noreferrer">
-                    <WhatsAppIcon className="size-5" /> Enviar pedido
-                  </a>
-                </Button>
+                <div className="grid gap-2 border-t px-5 pt-3 pb-4">
+                  <Button
+                    variant={esCelular ? "whatsapp" : "default"}
+                    size="lg"
+                    disabled={!imagenActual}
+                    onClick={esCelular ? compartirPedido : descargarPedido}
+                  >
+                    {!imagenActual ? (
+                      <Loader2 className="size-5 animate-spin" />
+                    ) : esCelular ? (
+                      <WhatsAppIcon className="size-5" />
+                    ) : (
+                      <ClipboardList className="size-5" />
+                    )}
+                    {esCelular ? "Enviar por WhatsApp" : "Descargar pedido"}
+                  </Button>
+                </div>
+              </>
+            )}
+            <div className="bg-border mx-auto mb-2.5 h-1.5 w-10 shrink-0 rounded-full md:hidden" />
+          </DialogPrimitive.Content>
+        </DialogPrimitive.Portal>
+      </DialogPrimitive.Root>
+
+      {/* Solo PC: tras descargar, invitar a enviar la imagen. */}
+      <Dialog open={dialogoEnvio} onOpenChange={setDialogoEnvio}>
+        <DialogContent className="max-w-sm gap-5 rounded-3xl text-center">
+          <div className="bg-accent text-primary mx-auto grid size-14 place-items-center rounded-full">
+            <ClipboardList className="size-6" />
+          </div>
+          <div className="grid gap-1.5">
+            <DialogTitle className="text-secondary text-xl">
+              Envíanos tu pedido
+            </DialogTitle>
+            <DialogDescription asChild>
+              <div>
+                <p>Se descargó una imagen con tu pedido.</p>
+                <p>Envíala a nuestro Whatsapp.</p>
               </div>
-            </>
-          )}
-        </DialogPrimitive.Content>
-      </DialogPrimitive.Portal>
-    </DialogPrimitive.Root>
+            </DialogDescription>
+          </div>
+          <Button asChild variant="whatsapp" size="lg">
+            <a
+              href={chatNegocio}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setDialogoEnvio(false)}
+            >
+              <WhatsAppIcon className="size-5" /> Abrir WhatsApp
+            </a>
+          </Button>
+        </DialogContent>
+      </Dialog>
+    </>
   );
 };

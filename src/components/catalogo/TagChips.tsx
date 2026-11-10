@@ -19,7 +19,7 @@ export const TagChips = ({ tags, activo, onCambio }: Props) => {
           "h-9 shrink-0 rounded-full border px-4 text-sm capitalize transition-all duration-200 active:scale-95",
           sel
             ? "bg-primary text-primary-foreground border-primary shadow-sm shadow-primary/30"
-            : "bg-white/70 hover:bg-accent hover:text-accent-foreground",
+            : "bg-surface hover:bg-accent hover:text-accent-foreground",
         )}
       >
         {etiqueta}

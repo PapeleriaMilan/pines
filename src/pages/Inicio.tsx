@@ -27,21 +27,32 @@ export default function Inicio() {
   return (
     <div className="grid gap-6">
       <section className="grid gap-3">
-        <h1 className="text-secondary text-2xl font-semibold tracking-tight md:text-3xl">
-          Pines <span className="text-primary">botón</span>
+        <h1 className="text-primary text-2xl font-semibold tracking-tight md:text-3xl">
+          Catálogo de pines.
         </h1>
         <SearchBar valor={q} onCambio={(v) => actualizar("q", v)} />
-        <TagChips tags={todosLosTags} activo={tag} onCambio={(t) => actualizar("tag", t)} />
+        <TagChips
+          tags={todosLosTags}
+          activo={tag}
+          onCambio={(t) => actualizar("tag", t)}
+        />
       </section>
 
-      <motion.ul layout className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
+      <motion.ul
+        layout
+        className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4"
+      >
         <AnimatePresence mode="popLayout">
           {resultados.map((d, i) => (
             <motion.li
               key={d.slug}
               layout
               initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0, transition: { duration: 0.2, delay: Math.min(i, 8) * 0.025 } }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.2, delay: Math.min(i, 8) * 0.025 },
+              }}
               exit={{ opacity: 0, scale: 0.95, transition: { duration: 0.12 } }}
             >
               <DisenoCard diseno={d} prioridad={i < 4} />
@@ -51,7 +62,9 @@ export default function Inicio() {
       </motion.ul>
 
       {resultados.length === 0 && (
-        <p className="text-muted-foreground py-16 text-center text-sm">Sin resultados</p>
+        <p className="text-muted-foreground py-16 text-center text-sm">
+          Sin resultados
+        </p>
       )}
     </div>
   );
