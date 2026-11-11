@@ -1,4 +1,23 @@
+# Dependencias y build
 node_modules
 dist
 *.local
 .netlify
+
+# Variables de entorno / credenciales (por si se agregan en el futuro)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Herramientas locales
+.claude/
+.vscode/
+.idea/
+
+# Logs y sistema
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
