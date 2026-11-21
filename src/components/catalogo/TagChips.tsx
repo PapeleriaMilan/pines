@@ -2,11 +2,13 @@ import { cn } from "@/lib/utils";
 
 interface Props {
   tags: string[];
+  /** Texto del chip que quita el filtro. */
+  todos?: string;
   activo: string | null;
   onCambio: (tag: string | null) => void;
 }
 
-export const TagChips = ({ tags, activo, onCambio }: Props) => {
+export const TagChips = ({ tags, todos = "Todos", activo, onCambio }: Props) => {
   const chip = (etiqueta: string, valor: string | null) => {
     const sel = activo === valor;
     return (
@@ -29,7 +31,7 @@ export const TagChips = ({ tags, activo, onCambio }: Props) => {
 
   return (
     <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 py-1 md:mx-0 md:flex-wrap md:px-0">
-      {chip("Todos", null)}
+      {chip(todos, null)}
       {tags.map((t) => chip(t, t))}
     </div>
   );

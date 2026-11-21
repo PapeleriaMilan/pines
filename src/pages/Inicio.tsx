@@ -4,14 +4,15 @@ import { AnimatePresence, motion } from "motion/react";
 import { SearchBar } from "@/components/catalogo/SearchBar";
 import { TagChips } from "@/components/catalogo/TagChips";
 import { DisenoCard } from "@/components/catalogo/DisenoCard";
-import { filtrarDisenos, todosLosTags } from "@/lib/catalogo";
+import { filtrarDisenos, todasLasTematicas, todosLosTags } from "@/lib/catalogo";
 
 export default function Inicio() {
   const [params, setParams] = useSearchParams();
   const q = params.get("q") ?? "";
   const tag = params.get("tag");
+  const tematica = params.get("tema");
 
-  const actualizar = (clave: "q" | "tag", valor: string | null) =>
+  const actualizar = (clave: "q" | "tag" | "tema", valor: string | null) =>
     setParams(
       (prev) => {
         const p = new URLSearchParams(prev);
@@ -22,7 +23,7 @@ export default function Inicio() {
       { replace: true },
     );
 
-  const resultados = useMemo(() => filtrarDisenos(q, tag), [q, tag]);
+  const resultados = useMemo(() => filtrarDisenos(q, tag, tematica), [q, tag, tematica]);
 
   return (
     <div className="grid gap-6">
@@ -31,6 +32,14 @@ export default function Inicio() {
           Catálogo de pines.
         </h1>
         <SearchBar valor={q} onCambio={(v) => actualizar("q", v)} />
+        {todasLasTematicas.length > 1 && (
+          <TagChips
+            tags={todasLasTematicas}
+            todos="Todas las temáticas"
+            activo={tematica}
+            onCambio={(t) => actualizar("tema", t)}
+          />
+        )}
         <TagChips
           tags={todosLosTags}
           activo={tag}

@@ -1,0 +1,1371 @@
+{
+  "version": 2,
+  "generado": "2026-11-21T00:42:22.451Z",
+  "tematicas": [
+    {
+      "id": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "nombre": "Deportes",
+      "slug": "Deportes",
+      "subtitulo": null
+    }
+  ],
+  "disenos": [
+    {
+      "codigo": 72,
+      "carpeta": "Deportes-72",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "1.png",
+      "fecha": "2026-11-21T00:28:43.547Z"
+    },
+    {
+      "codigo": 73,
+      "carpeta": "Deportes-73",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "2.png",
+      "fecha": "2026-11-21T00:28:43.550Z"
+    },
+    {
+      "codigo": 74,
+      "carpeta": "Deportes-74",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "3.png",
+      "fecha": "2026-11-21T00:28:43.551Z"
+    },
+    {
+      "codigo": 75,
+      "carpeta": "Deportes-75",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "4.png",
+      "fecha": "2026-11-21T00:28:43.553Z"
+    },
+    {
+      "codigo": 76,
+      "carpeta": "Deportes-76",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "5.png",
+      "fecha": "2026-11-21T00:28:43.554Z"
+    },
+    {
+      "codigo": 77,
+      "carpeta": "Deportes-77",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "6.png",
+      "fecha": "2026-11-21T00:28:43.555Z"
+    },
+    {
+      "codigo": 78,
+      "carpeta": "Deportes-78",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "7.png",
+      "fecha": "2026-11-21T00:28:43.557Z"
+    },
+    {
+      "codigo": 79,
+      "carpeta": "Deportes-79",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "8.png",
+      "fecha": "2026-11-21T00:28:43.558Z"
+    },
+    {
+      "codigo": 80,
+      "carpeta": "Deportes-80",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "9.png",
+      "fecha": "2026-11-21T00:28:43.560Z"
+    },
+    {
+      "codigo": 81,
+      "carpeta": "Deportes-81",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "10.png",
+      "fecha": "2026-11-21T00:28:43.561Z"
+    },
+    {
+      "codigo": 82,
+      "carpeta": "Deportes-82",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "11.png",
+      "fecha": "2026-11-21T00:28:43.562Z"
+    },
+    {
+      "codigo": 83,
+      "carpeta": "Deportes-83",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "12.png",
+      "fecha": "2026-11-21T00:28:43.563Z"
+    },
+    {
+      "codigo": 84,
+      "carpeta": "Deportes-84",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "13.png",
+      "fecha": "2026-11-21T00:28:43.564Z"
+    },
+    {
+      "codigo": 85,
+      "carpeta": "Deportes-85",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "14.png",
+      "fecha": "2026-11-21T00:28:43.565Z"
+    },
+    {
+      "codigo": 86,
+      "carpeta": "Deportes-86",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "15.png",
+      "fecha": "2026-11-21T00:28:43.567Z"
+    },
+    {
+      "codigo": 87,
+      "carpeta": "Deportes-87",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "16.png",
+      "fecha": "2026-11-21T00:28:43.568Z"
+    },
+    {
+      "codigo": 88,
+      "carpeta": "Deportes-88",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "17.png",
+      "fecha": "2026-11-21T00:28:43.569Z"
+    },
+    {
+      "codigo": 89,
+      "carpeta": "Deportes-89",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "18.png",
+      "fecha": "2026-11-21T00:28:43.570Z"
+    },
+    {
+      "codigo": 90,
+      "carpeta": "Deportes-90",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "19.png",
+      "fecha": "2026-11-21T00:28:43.572Z"
+    },
+    {
+      "codigo": 91,
+      "carpeta": "Deportes-91",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "20.png",
+      "fecha": "2026-11-21T00:28:43.573Z"
+    },
+    {
+      "codigo": 92,
+      "carpeta": "Deportes-92",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "21.png",
+      "fecha": "2026-11-21T00:28:43.574Z"
+    },
+    {
+      "codigo": 93,
+      "carpeta": "Deportes-93",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "22.png",
+      "fecha": "2026-11-21T00:28:43.575Z"
+    },
+    {
+      "codigo": 94,
+      "carpeta": "Deportes-94",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "23.png",
+      "fecha": "2026-11-21T00:28:43.577Z"
+    },
+    {
+      "codigo": 95,
+      "carpeta": "Deportes-95",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "24.png",
+      "fecha": "2026-11-21T00:28:43.578Z"
+    },
+    {
+      "codigo": 96,
+      "carpeta": "Deportes-96",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "25.png",
+      "fecha": "2026-11-21T00:28:43.579Z"
+    },
+    {
+      "codigo": 97,
+      "carpeta": "Deportes-97",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "26.png",
+      "fecha": "2026-11-21T00:28:43.580Z"
+    },
+    {
+      "codigo": 98,
+      "carpeta": "Deportes-98",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "27.png",
+      "fecha": "2026-11-21T00:28:43.581Z"
+    },
+    {
+      "codigo": 99,
+      "carpeta": "Deportes-99",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "28.png",
+      "fecha": "2026-11-21T00:28:43.582Z"
+    },
+    {
+      "codigo": 100,
+      "carpeta": "Deportes-100",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "29.png",
+      "fecha": "2026-11-21T00:28:43.583Z"
+    },
+    {
+      "codigo": 101,
+      "carpeta": "Deportes-101",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "30.png",
+      "fecha": "2026-11-21T00:28:43.585Z"
+    },
+    {
+      "codigo": 102,
+      "carpeta": "Deportes-102",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "31.png",
+      "fecha": "2026-11-21T00:28:43.586Z"
+    },
+    {
+      "codigo": 103,
+      "carpeta": "Deportes-103",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "32.png",
+      "fecha": "2026-11-21T00:28:43.587Z"
+    },
+    {
+      "codigo": 104,
+      "carpeta": "Deportes-104",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "33.png",
+      "fecha": "2026-11-21T00:28:43.588Z"
+    },
+    {
+      "codigo": 105,
+      "carpeta": "Deportes-105",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "34.png",
+      "fecha": "2026-11-21T00:28:43.589Z"
+    },
+    {
+      "codigo": 106,
+      "carpeta": "Deportes-106",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "35.png",
+      "fecha": "2026-11-21T00:28:43.591Z"
+    },
+    {
+      "codigo": 107,
+      "carpeta": "Deportes-107",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "36.png",
+      "fecha": "2026-11-21T00:28:43.592Z"
+    },
+    {
+      "codigo": 108,
+      "carpeta": "Deportes-108",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "37.png",
+      "fecha": "2026-11-21T00:28:43.593Z"
+    },
+    {
+      "codigo": 109,
+      "carpeta": "Deportes-109",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "38.png",
+      "fecha": "2026-11-21T00:28:43.594Z"
+    },
+    {
+      "codigo": 110,
+      "carpeta": "Deportes-110",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "39.png",
+      "fecha": "2026-11-21T00:28:43.596Z"
+    },
+    {
+      "codigo": 111,
+      "carpeta": "Deportes-111",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "40.png",
+      "fecha": "2026-11-21T00:28:43.597Z"
+    },
+    {
+      "codigo": 112,
+      "carpeta": "Deportes-112",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "41.png",
+      "fecha": "2026-11-21T00:28:43.598Z"
+    },
+    {
+      "codigo": 113,
+      "carpeta": "Deportes-113",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "42.png",
+      "fecha": "2026-11-21T00:28:43.599Z"
+    },
+    {
+      "codigo": 114,
+      "carpeta": "Deportes-114",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "43.png",
+      "fecha": "2026-11-21T00:28:43.600Z"
+    },
+    {
+      "codigo": 115,
+      "carpeta": "Deportes-115",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "44.png",
+      "fecha": "2026-11-21T00:28:43.601Z"
+    },
+    {
+      "codigo": 116,
+      "carpeta": "Deportes-116",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "45.png",
+      "fecha": "2026-11-21T00:28:43.602Z"
+    },
+    {
+      "codigo": 117,
+      "carpeta": "Deportes-117",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "46.png",
+      "fecha": "2026-11-21T00:28:43.603Z"
+    },
+    {
+      "codigo": 118,
+      "carpeta": "Deportes-118",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "47.png",
+      "fecha": "2026-11-21T00:28:43.605Z"
+    },
+    {
+      "codigo": 119,
+      "carpeta": "Deportes-119",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "48.png",
+      "fecha": "2026-11-21T00:28:43.606Z"
+    },
+    {
+      "codigo": 120,
+      "carpeta": "Deportes-120",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "49.png",
+      "fecha": "2026-11-21T00:28:43.607Z"
+    },
+    {
+      "codigo": 121,
+      "carpeta": "Deportes-121",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "50.png",
+      "fecha": "2026-11-21T00:28:43.608Z"
+    },
+    {
+      "codigo": 122,
+      "carpeta": "Deportes-122",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "51.png",
+      "fecha": "2026-11-21T00:28:43.610Z"
+    },
+    {
+      "codigo": 123,
+      "carpeta": "Deportes-123",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "52.png",
+      "fecha": "2026-11-21T00:28:43.611Z"
+    },
+    {
+      "codigo": 124,
+      "carpeta": "Deportes-124",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "53.png",
+      "fecha": "2026-11-21T00:28:43.612Z"
+    },
+    {
+      "codigo": 125,
+      "carpeta": "Deportes-125",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "54.png",
+      "fecha": "2026-11-21T00:28:43.614Z"
+    },
+    {
+      "codigo": 126,
+      "carpeta": "Deportes-126",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "55.png",
+      "fecha": "2026-11-21T00:28:43.615Z"
+    },
+    {
+      "codigo": 127,
+      "carpeta": "Deportes-127",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "56.png",
+      "fecha": "2026-11-21T00:28:43.616Z"
+    },
+    {
+      "codigo": 128,
+      "carpeta": "Deportes-128",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "57.png",
+      "fecha": "2026-11-21T00:28:43.618Z"
+    },
+    {
+      "codigo": 129,
+      "carpeta": "Deportes-129",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "58.png",
+      "fecha": "2026-11-21T00:28:43.619Z"
+    },
+    {
+      "codigo": 130,
+      "carpeta": "Deportes-130",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "59.png",
+      "fecha": "2026-11-21T00:28:43.620Z"
+    },
+    {
+      "codigo": 131,
+      "carpeta": "Deportes-131",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "60.png",
+      "fecha": "2026-11-21T00:28:43.621Z"
+    },
+    {
+      "codigo": 132,
+      "carpeta": "Deportes-132",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "61.png",
+      "fecha": "2026-11-21T00:28:43.623Z"
+    },
+    {
+      "codigo": 133,
+      "carpeta": "Deportes-133",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "62.png",
+      "fecha": "2026-11-21T00:28:43.624Z"
+    },
+    {
+      "codigo": 134,
+      "carpeta": "Deportes-134",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "63.png",
+      "fecha": "2026-11-21T00:28:43.625Z"
+    },
+    {
+      "codigo": 135,
+      "carpeta": "Deportes-135",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "64.png",
+      "fecha": "2026-11-21T00:28:43.626Z"
+    },
+    {
+      "codigo": 136,
+      "carpeta": "Deportes-136",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "65.png",
+      "fecha": "2026-11-21T00:28:43.628Z"
+    },
+    {
+      "codigo": 137,
+      "carpeta": "Deportes-137",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "66.png",
+      "fecha": "2026-11-21T00:28:43.629Z"
+    },
+    {
+      "codigo": 138,
+      "carpeta": "Deportes-138",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "67.png",
+      "fecha": "2026-11-21T00:28:43.630Z"
+    },
+    {
+      "codigo": 139,
+      "carpeta": "Deportes-139",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "68.png",
+      "fecha": "2026-11-21T00:28:43.632Z"
+    },
+    {
+      "codigo": 140,
+      "carpeta": "Deportes-140",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "69.png",
+      "fecha": "2026-11-21T00:28:43.633Z"
+    },
+    {
+      "codigo": 141,
+      "carpeta": "Deportes-141",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "70.png",
+      "fecha": "2026-11-21T00:28:43.635Z"
+    },
+    {
+      "codigo": 142,
+      "carpeta": "Deportes-142",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "tigres",
+        "rayados",
+        "jugadores",
+        "bicho",
+        "barcelona",
+        "cr7"
+      ],
+      "archivo": "71.png",
+      "fecha": "2026-11-21T00:28:43.636Z"
+    },
+    {
+      "codigo": 143,
+      "carpeta": "Deportes-143",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "deportes",
+        "jugadores",
+        "rayados",
+        "tigres",
+        "barcelona",
+        "bicho",
+        "mexico"
+      ],
+      "archivo": "9.png",
+      "fecha": "2026-11-21T00:41:54.158Z"
+    },
+    {
+      "codigo": 144,
+      "carpeta": "Deportes-144",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "deportes",
+        "jugadores",
+        "rayados",
+        "tigres",
+        "barcelona",
+        "bicho",
+        "mexico"
+      ],
+      "archivo": "10.png",
+      "fecha": "2026-11-21T00:41:54.160Z"
+    },
+    {
+      "codigo": 145,
+      "carpeta": "Deportes-145",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "deportes",
+        "jugadores",
+        "rayados",
+        "tigres",
+        "barcelona",
+        "bicho",
+        "mexico"
+      ],
+      "archivo": "11.png",
+      "fecha": "2026-11-21T00:41:54.162Z"
+    },
+    {
+      "codigo": 146,
+      "carpeta": "Deportes-146",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "deportes",
+        "jugadores",
+        "rayados",
+        "tigres",
+        "barcelona",
+        "bicho",
+        "mexico"
+      ],
+      "archivo": "12.png",
+      "fecha": "2026-11-21T00:41:54.163Z"
+    },
+    {
+      "codigo": 147,
+      "carpeta": "Deportes-147",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "deportes",
+        "jugadores",
+        "rayados",
+        "tigres",
+        "barcelona",
+        "bicho",
+        "mexico"
+      ],
+      "archivo": "13.png",
+      "fecha": "2026-11-21T00:41:54.164Z"
+    },
+    {
+      "codigo": 148,
+      "carpeta": "Deportes-148",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "deportes",
+        "jugadores",
+        "rayados",
+        "tigres",
+        "barcelona",
+        "bicho",
+        "mexico"
+      ],
+      "archivo": "1.png",
+      "fecha": "2026-11-21T00:41:54.166Z"
+    },
+    {
+      "codigo": 149,
+      "carpeta": "Deportes-149",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "deportes",
+        "jugadores",
+        "rayados",
+        "tigres",
+        "barcelona",
+        "bicho",
+        "mexico"
+      ],
+      "archivo": "2.png",
+      "fecha": "2026-11-21T00:41:54.167Z"
+    },
+    {
+      "codigo": 150,
+      "carpeta": "Deportes-150",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "deportes",
+        "jugadores",
+        "rayados",
+        "tigres",
+        "barcelona",
+        "bicho",
+        "mexico"
+      ],
+      "archivo": "3.png",
+      "fecha": "2026-11-21T00:41:54.168Z"
+    },
+    {
+      "codigo": 151,
+      "carpeta": "Deportes-151",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "deportes",
+        "jugadores",
+        "rayados",
+        "tigres",
+        "barcelona",
+        "bicho",
+        "mexico"
+      ],
+      "archivo": "4.png",
+      "fecha": "2026-11-21T00:41:54.169Z"
+    },
+    {
+      "codigo": 152,
+      "carpeta": "Deportes-152",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "deportes",
+        "jugadores",
+        "rayados",
+        "tigres",
+        "barcelona",
+        "bicho",
+        "mexico"
+      ],
+      "archivo": "5.png",
+      "fecha": "2026-11-21T00:41:54.170Z"
+    },
+    {
+      "codigo": 153,
+      "carpeta": "Deportes-153",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "deportes",
+        "jugadores",
+        "rayados",
+        "tigres",
+        "barcelona",
+        "bicho",
+        "mexico"
+      ],
+      "archivo": "6.png",
+      "fecha": "2026-11-21T00:41:54.172Z"
+    },
+    {
+      "codigo": 154,
+      "carpeta": "Deportes-154",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "deportes",
+        "jugadores",
+        "rayados",
+        "tigres",
+        "barcelona",
+        "bicho",
+        "mexico"
+      ],
+      "archivo": "7.png",
+      "fecha": "2026-11-21T00:41:54.173Z"
+    },
+    {
+      "codigo": 155,
+      "carpeta": "Deportes-155",
+      "tematicaId": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
+      "tags": [
+        "futbol",
+        "deportes",
+        "jugadores",
+        "rayados",
+        "tigres",
+        "barcelona",
+        "bicho",
+        "mexico"
+      ],
+      "archivo": "8.png",
+      "fecha": "2026-11-21T00:41:54.174Z"
+    }
+  ]
+}

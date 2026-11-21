@@ -38,10 +38,15 @@ export default function Diseno() {
         <div className="min-w-0 flex-1">
           <h1 className="text-secondary text-xl font-semibold md:text-2xl">
             {diseno.nombre}
+            <Badge variant="outline" className="ml-2 align-middle">
+              #{diseno.codigo}
+            </Badge>
           </h1>
-          <p className="text-muted-foreground font-inter text-sm">
-            {diseno.subtitulo}
-          </p>
+          {diseno.subtitulo && (
+            <p className="text-muted-foreground font-inter text-sm">
+              {diseno.subtitulo}
+            </p>
+          )}
           <div className="mt-2 flex flex-wrap gap-1.5">
             {diseno.tags.map((t) => (
               <Badge key={t} asChild variant="outline" className="capitalize">

@@ -100,7 +100,7 @@ export const CartDrawer = () => {
 
   const imagenActual = lineas.length > 0 ? imagen : null;
 
-  const chatNegocio = enlaceWhatsApp(textoPedido());
+  const chatNegocio = enlaceWhatsApp(textoPedido(lineas));
 
   // Celular: menú nativo (el cliente elige WhatsApp y el chat del negocio).
   const compartirPedido = async () => {
@@ -109,7 +109,7 @@ export const CartDrawer = () => {
       type: imagenActual.blob.type,
     });
     try {
-      await navigator.share({ files: [archivo], text: textoPedido() });
+      await navigator.share({ files: [archivo], text: textoPedido(lineas) });
     } catch (e) {
       if ((e as Error).name !== "AbortError")
         window.open(chatNegocio, "_blank", "noopener");
@@ -262,9 +262,11 @@ export const CartDrawer = () => {
                                 <p className="group-hover:text-primary truncate text-sm font-semibold transition-colors">
                                   {diseno.nombre}
                                 </p>
-                                <p className="text-muted-foreground font-inter truncate text-xs">
-                                  {diseno.subtitulo}
-                                </p>
+                                {diseno.subtitulo && (
+                                  <p className="text-muted-foreground font-inter truncate text-xs">
+                                    {diseno.subtitulo}
+                                  </p>
+                                )}
                               </div>
                             </Link>
                           </DialogPrimitive.Close>

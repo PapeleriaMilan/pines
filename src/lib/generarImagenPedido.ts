@@ -157,8 +157,11 @@ export async function generarImagenPedido(
   );
 }
 
-export function textoPedido() {
-  return `*¡Hola, buen día!*\n Quiero pedir unos pines`;
+export function textoPedido(lineas: LineaPedido[] = []) {
+  const detalle = lineas
+    .map((l) => `• #${l.diseno.codigo} ×${l.cantidad}`)
+    .join("\n");
+  return `*¡Hola, buen día!*\n Quiero pedir unos pines${detalle ? `:\n${detalle}` : ""}`;
 }
 
 export const enlaceWhatsApp = (texto: string) =>

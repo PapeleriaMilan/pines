@@ -5,7 +5,7 @@ import { GlowCard } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/hooks/useCart";
-import type { Diseno } from "@/lib/catalogo";
+import { esNuevo, type Diseno } from "@/lib/catalogo";
 
 interface Props {
   diseno: Diseno;
@@ -21,9 +21,9 @@ export const DisenoCard = ({ diseno, prioridad }: Props) => {
       <Link
         to={`/diseno/${diseno.slug}`}
         className="flex flex-1 flex-col rounded-[21px] outline-none"
-        aria-label={`${diseno.nombre}, ${diseno.subtitulo}`}
+        aria-label={diseno.subtitulo ? `${diseno.nombre}, ${diseno.subtitulo}` : diseno.nombre}
       >
-        <div className="shine bg-muted m-1.5 aspect-square overflow-hidden rounded-[16px]">
+        <div className="shine bg-muted relative m-1.5 aspect-square overflow-hidden rounded-[16px]">
           <img
             src={diseno.portada}
             alt=""
@@ -34,11 +34,19 @@ export const DisenoCard = ({ diseno, prioridad }: Props) => {
             decoding="async"
             className="size-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
           />
+          <Badge className="absolute top-2 left-2 px-1.5 text-[10px]">#{diseno.codigo}</Badge>
+          {esNuevo(diseno) && (
+            <Badge variant="secondary" className="absolute top-2 right-2 px-1.5 text-[10px]">
+              Nuevo
+            </Badge>
+          )}
         </div>
         <div className="flex flex-1 flex-col gap-2 px-3 pt-1.5 pb-3">
           <div className="min-w-0">
             <p className="text-foreground truncate text-sm font-semibold">{diseno.nombre}</p>
-            <p className="text-muted-foreground font-inter truncate text-xs">{diseno.subtitulo}</p>
+            {diseno.subtitulo && (
+              <p className="text-muted-foreground font-inter truncate text-xs">{diseno.subtitulo}</p>
+            )}
           </div>
           <div className="mt-auto flex min-h-8 flex-wrap items-end gap-1 pr-9">
             {diseno.tags.slice(0, 3).map((t) => (
