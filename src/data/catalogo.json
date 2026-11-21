@@ -1,11 +1,29 @@
 {
   "version": 2,
-  "generado": "2026-11-21T00:42:22.451Z",
+  "generado": "2026-11-21T01:27:50.737Z",
   "tematicas": [
     {
       "id": "f1f81e02-e016-42b4-bb32-47fa80ef8737",
       "nombre": "Deportes",
       "slug": "Deportes",
+      "subtitulo": null
+    },
+    {
+      "id": "251827f8-d404-4a75-9b9c-82383e749b28",
+      "nombre": "Pucca",
+      "slug": "Pucca",
+      "subtitulo": null
+    },
+    {
+      "id": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "nombre": "Snoopy",
+      "slug": "Snoopy",
+      "subtitulo": null
+    },
+    {
+      "id": "d460d28b-2089-43b0-8737-06551d69433e",
+      "nombre": "Stitch",
+      "slug": "Stitch",
       "subtitulo": null
     }
   ],
@@ -1366,6 +1384,662 @@
       ],
       "archivo": "8.png",
       "fecha": "2026-11-21T00:41:54.174Z"
+    },
+    {
+      "codigo": 156,
+      "carpeta": "Stitch-156",
+      "tematicaId": "d460d28b-2089-43b0-8737-06551d69433e",
+      "tags": [
+        "stitch",
+        "personajes",
+        "dibujos",
+        "tierno"
+      ],
+      "archivo": "4.5 y 7cm (2).png",
+      "fecha": "2026-11-21T00:57:50.721Z"
+    },
+    {
+      "codigo": 157,
+      "carpeta": "Stitch-157",
+      "tematicaId": "d460d28b-2089-43b0-8737-06551d69433e",
+      "tags": [
+        "stitch",
+        "personajes",
+        "dibujos",
+        "tierno"
+      ],
+      "archivo": "4.5 y 7cm (3).png",
+      "fecha": "2026-11-21T00:57:50.723Z"
+    },
+    {
+      "codigo": 158,
+      "carpeta": "Stitch-158",
+      "tematicaId": "d460d28b-2089-43b0-8737-06551d69433e",
+      "tags": [
+        "stitch",
+        "personajes",
+        "dibujos",
+        "tierno"
+      ],
+      "archivo": "4.5 y 7cm (4).png",
+      "fecha": "2026-11-21T00:57:50.724Z"
+    },
+    {
+      "codigo": 159,
+      "carpeta": "Stitch-159",
+      "tematicaId": "d460d28b-2089-43b0-8737-06551d69433e",
+      "tags": [
+        "stitch",
+        "personajes",
+        "dibujos",
+        "tierno"
+      ],
+      "archivo": "4.5 y 7cm (5).png",
+      "fecha": "2026-11-21T00:57:50.726Z"
+    },
+    {
+      "codigo": 160,
+      "carpeta": "Stitch-160",
+      "tematicaId": "d460d28b-2089-43b0-8737-06551d69433e",
+      "tags": [
+        "stitch",
+        "personajes",
+        "dibujos",
+        "tierno"
+      ],
+      "archivo": "4.5 y 7cm (6).png",
+      "fecha": "2026-11-21T00:57:50.727Z"
+    },
+    {
+      "codigo": 161,
+      "carpeta": "Stitch-161",
+      "tematicaId": "d460d28b-2089-43b0-8737-06551d69433e",
+      "tags": [
+        "stitch",
+        "personajes",
+        "dibujos",
+        "tierno"
+      ],
+      "archivo": "4.5 y 7cm (7).png",
+      "fecha": "2026-11-21T00:57:50.728Z"
+    },
+    {
+      "codigo": 162,
+      "carpeta": "Stitch-162",
+      "tematicaId": "d460d28b-2089-43b0-8737-06551d69433e",
+      "tags": [
+        "stitch",
+        "personajes",
+        "dibujos",
+        "tierno"
+      ],
+      "archivo": "4.5 y 7cm (8).png",
+      "fecha": "2026-11-21T00:57:50.730Z"
+    },
+    {
+      "codigo": 163,
+      "carpeta": "Stitch-163",
+      "tematicaId": "d460d28b-2089-43b0-8737-06551d69433e",
+      "tags": [
+        "stitch",
+        "personajes",
+        "dibujos",
+        "tierno"
+      ],
+      "archivo": "4.5 y 7cm.png",
+      "fecha": "2026-11-21T00:57:50.731Z"
+    },
+    {
+      "codigo": 164,
+      "carpeta": "Pucca-164",
+      "tematicaId": "251827f8-d404-4a75-9b9c-82383e749b28",
+      "tags": [
+        "tierno",
+        "dibujos",
+        "personajes"
+      ],
+      "archivo": "4.5 y 7cm (4).png",
+      "fecha": "2026-11-21T01:23:04.672Z"
+    },
+    {
+      "codigo": 165,
+      "carpeta": "Pucca-165",
+      "tematicaId": "251827f8-d404-4a75-9b9c-82383e749b28",
+      "tags": [
+        "tierno",
+        "dibujos",
+        "personajes"
+      ],
+      "archivo": "4.5 y 7cm (5).png",
+      "fecha": "2026-11-21T01:23:04.675Z"
+    },
+    {
+      "codigo": 166,
+      "carpeta": "Pucca-166",
+      "tematicaId": "251827f8-d404-4a75-9b9c-82383e749b28",
+      "tags": [
+        "tierno",
+        "dibujos",
+        "personajes"
+      ],
+      "archivo": "4.5 y 7cm (6).png",
+      "fecha": "2026-11-21T01:23:04.677Z"
+    },
+    {
+      "codigo": 167,
+      "carpeta": "Pucca-167",
+      "tematicaId": "251827f8-d404-4a75-9b9c-82383e749b28",
+      "tags": [
+        "tierno",
+        "dibujos",
+        "personajes"
+      ],
+      "archivo": "4.5 y 7cm.png",
+      "fecha": "2026-11-21T01:23:04.678Z"
+    },
+    {
+      "codigo": 168,
+      "carpeta": "Pucca-168",
+      "tematicaId": "251827f8-d404-4a75-9b9c-82383e749b28",
+      "tags": [
+        "tierno",
+        "dibujos",
+        "personajes"
+      ],
+      "archivo": "4.5 y 7cm (2).png",
+      "fecha": "2026-11-21T01:23:04.679Z"
+    },
+    {
+      "codigo": 169,
+      "carpeta": "Pucca-169",
+      "tematicaId": "251827f8-d404-4a75-9b9c-82383e749b28",
+      "tags": [
+        "tierno",
+        "dibujos",
+        "personajes"
+      ],
+      "archivo": "4.5 y 7cm (3).png",
+      "fecha": "2026-11-21T01:23:04.681Z"
+    },
+    {
+      "codigo": 170,
+      "carpeta": "Snoopy-170",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "4.5 y 7cm (3).png",
+      "fecha": "2026-11-21T01:27:17.247Z"
+    },
+    {
+      "codigo": 171,
+      "carpeta": "Snoopy-171",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "4.5 y 7cm (4).png",
+      "fecha": "2026-11-21T01:27:17.249Z"
+    },
+    {
+      "codigo": 172,
+      "carpeta": "Snoopy-172",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "4.5 y 7cm.png",
+      "fecha": "2026-11-21T01:27:17.250Z"
+    },
+    {
+      "codigo": 173,
+      "carpeta": "Snoopy-173",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "4.png",
+      "fecha": "2026-11-21T01:27:17.252Z"
+    },
+    {
+      "codigo": 174,
+      "carpeta": "Snoopy-174",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "5.png",
+      "fecha": "2026-11-21T01:27:17.253Z"
+    },
+    {
+      "codigo": 175,
+      "carpeta": "Snoopy-175",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "6.png",
+      "fecha": "2026-11-21T01:27:17.254Z"
+    },
+    {
+      "codigo": 176,
+      "carpeta": "Snoopy-176",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "7.png",
+      "fecha": "2026-11-21T01:27:17.256Z"
+    },
+    {
+      "codigo": 177,
+      "carpeta": "Snoopy-177",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "8.png",
+      "fecha": "2026-11-21T01:27:17.257Z"
+    },
+    {
+      "codigo": 178,
+      "carpeta": "Snoopy-178",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "9.png",
+      "fecha": "2026-11-21T01:27:17.258Z"
+    },
+    {
+      "codigo": 179,
+      "carpeta": "Snoopy-179",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "10.png",
+      "fecha": "2026-11-21T01:27:17.260Z"
+    },
+    {
+      "codigo": 180,
+      "carpeta": "Snoopy-180",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "11.png",
+      "fecha": "2026-11-21T01:27:17.261Z"
+    },
+    {
+      "codigo": 181,
+      "carpeta": "Snoopy-181",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "12.png",
+      "fecha": "2026-11-21T01:27:17.263Z"
+    },
+    {
+      "codigo": 182,
+      "carpeta": "Snoopy-182",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "13.png",
+      "fecha": "2026-11-21T01:27:17.264Z"
+    },
+    {
+      "codigo": 183,
+      "carpeta": "Snoopy-183",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "14.png",
+      "fecha": "2026-11-21T01:27:17.265Z"
+    },
+    {
+      "codigo": 184,
+      "carpeta": "Snoopy-184",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "15.png",
+      "fecha": "2026-11-21T01:27:17.267Z"
+    },
+    {
+      "codigo": 185,
+      "carpeta": "Snoopy-185",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "16.png",
+      "fecha": "2026-11-21T01:27:17.268Z"
+    },
+    {
+      "codigo": 186,
+      "carpeta": "Snoopy-186",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "17.png",
+      "fecha": "2026-11-21T01:27:17.269Z"
+    },
+    {
+      "codigo": 187,
+      "carpeta": "Snoopy-187",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "18.png",
+      "fecha": "2026-11-21T01:27:17.271Z"
+    },
+    {
+      "codigo": 188,
+      "carpeta": "Snoopy-188",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "19.png",
+      "fecha": "2026-11-21T01:27:17.272Z"
+    },
+    {
+      "codigo": 189,
+      "carpeta": "Snoopy-189",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "20.png",
+      "fecha": "2026-11-21T01:27:17.273Z"
+    },
+    {
+      "codigo": 190,
+      "carpeta": "Snoopy-190",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "21.png",
+      "fecha": "2026-11-21T01:27:17.275Z"
+    },
+    {
+      "codigo": 191,
+      "carpeta": "Snoopy-191",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "22.png",
+      "fecha": "2026-11-21T01:27:17.276Z"
+    },
+    {
+      "codigo": 192,
+      "carpeta": "Snoopy-192",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "23.png",
+      "fecha": "2026-11-21T01:27:17.277Z"
+    },
+    {
+      "codigo": 193,
+      "carpeta": "Snoopy-193",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "24.png",
+      "fecha": "2026-11-21T01:27:17.279Z"
+    },
+    {
+      "codigo": 194,
+      "carpeta": "Snoopy-194",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "25.png",
+      "fecha": "2026-11-21T01:27:17.280Z"
+    },
+    {
+      "codigo": 195,
+      "carpeta": "Snoopy-195",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "26.png",
+      "fecha": "2026-11-21T01:27:17.281Z"
+    },
+    {
+      "codigo": 196,
+      "carpeta": "Snoopy-196",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "27.png",
+      "fecha": "2026-11-21T01:27:17.282Z"
+    },
+    {
+      "codigo": 197,
+      "carpeta": "Snoopy-197",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "28.png",
+      "fecha": "2026-11-21T01:27:17.284Z"
+    },
+    {
+      "codigo": 198,
+      "carpeta": "Snoopy-198",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "29.png",
+      "fecha": "2026-11-21T01:27:17.285Z"
+    },
+    {
+      "codigo": 199,
+      "carpeta": "Snoopy-199",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "30.png",
+      "fecha": "2026-11-21T01:27:17.287Z"
+    },
+    {
+      "codigo": 200,
+      "carpeta": "Snoopy-200",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "32.png",
+      "fecha": "2026-11-21T01:27:17.288Z"
+    },
+    {
+      "codigo": 201,
+      "carpeta": "Snoopy-201",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "33.png",
+      "fecha": "2026-11-21T01:27:17.289Z"
+    },
+    {
+      "codigo": 202,
+      "carpeta": "Snoopy-202",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "35.png",
+      "fecha": "2026-11-21T01:27:17.291Z"
+    },
+    {
+      "codigo": 203,
+      "carpeta": "Snoopy-203",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "36.png",
+      "fecha": "2026-11-21T01:27:17.292Z"
+    },
+    {
+      "codigo": 204,
+      "carpeta": "Snoopy-204",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "37.png",
+      "fecha": "2026-11-21T01:27:17.294Z"
+    },
+    {
+      "codigo": 205,
+      "carpeta": "Snoopy-205",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "38.png",
+      "fecha": "2026-11-21T01:27:17.295Z"
+    },
+    {
+      "codigo": 206,
+      "carpeta": "Snoopy-206",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "39.png",
+      "fecha": "2026-11-21T01:27:17.297Z"
+    },
+    {
+      "codigo": 207,
+      "carpeta": "Snoopy-207",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "40.png",
+      "fecha": "2026-11-21T01:27:17.298Z"
+    },
+    {
+      "codigo": 208,
+      "carpeta": "Snoopy-208",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "3.png",
+      "fecha": "2026-11-21T01:27:17.299Z"
+    },
+    {
+      "codigo": 209,
+      "carpeta": "Snoopy-209",
+      "tematicaId": "1e9019a4-e2c7-4e7a-84ac-d70bd73b7d52",
+      "tags": [
+        "dibujos",
+        "tierno",
+        "personajes"
+      ],
+      "archivo": "4.5 y 7cm (2).png",
+      "fecha": "2026-11-21T01:27:17.300Z"
     }
   ]
 }
